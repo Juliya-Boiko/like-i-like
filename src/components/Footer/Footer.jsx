@@ -1,5 +1,5 @@
 import { FooterContainer, FooterContent } from "./Footer.styled";
-import { MainContainer } from "components/common/MainContainer";
+import { MainContainer } from "components/common/MainContainer/MainContainer";
 import { Logo } from "components/Logo/Logo";
 import { Address } from "./Address/Address";
 import { Socials } from "./Socials/Socials";

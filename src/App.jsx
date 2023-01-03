@@ -1,7 +1,7 @@
 import { SharedLayout } from "layouts/SharedLayout";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "pages/Home/Home";
-import { Portfolio } from "pages/Portfolio/Portfolio";
+import { Home } from "pages/Home";
+import { Portfolio } from "pages/Portfolio";
 
 export const App = () => {
   return (
