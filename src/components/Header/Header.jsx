@@ -1,5 +1,5 @@
-import { Navigation } from "components/Navigation/Navigation";
-import { UserLang } from "components/UserLang/UserLang";
+import { Navigation } from "components/Header/Navigation/Navigation";
+import { UserLang } from "components/Header/UserLang/UserLang";
 import { MainContainer } from "components/common/MainContainer";
 import { HeaderContainer, HeaderContent } from "./Header.styled";
 

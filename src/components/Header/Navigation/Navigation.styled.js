@@ -13,6 +13,7 @@ export const NavItem = styled.li`
 
 export const NavItemLink = styled(NavLink)`
   font-weight: ${p => p.theme.fontWeight.light};
+  font-size: 24px;
   text-transform: uppercase;
   color: ${p => p.theme.colors.white};
 
