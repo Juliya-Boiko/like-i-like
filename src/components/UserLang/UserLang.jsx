@@ -1,8 +1,10 @@
+import { LangList, LangItem } from "./UserLang.styled";
+
 export const UserLang = () => {
   return (
-    <ul>
-      <li>EN</li>
-      <li>UA</li>
-    </ul>
+    <LangList>
+      <LangItem>EN /</LangItem>
+      <LangItem>UA</LangItem>
+    </LangList>
   );
 };

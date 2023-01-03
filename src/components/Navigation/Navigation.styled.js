@@ -12,6 +12,8 @@ export const NavItem = styled.li`
 `;
 
 export const NavItemLink = styled(NavLink)`
+  font-weight: ${p => p.theme.fontWeight.light};
+  text-transform: uppercase;
   color: ${p => p.theme.colors.white};
 
   &:hover {
