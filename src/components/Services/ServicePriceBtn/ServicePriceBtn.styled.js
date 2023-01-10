@@ -3,16 +3,20 @@ import { GoTriangleDown, GoTriangleRight } from "react-icons/go";
 
 export const PriceBtn = styled.button`
   width: 100%;
-  padding: 20px 40px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: start;
   font-weight: ${p => p.theme.fontWeight.bold};
-  font-size: 24px;
+  font-size: 12px;
   text-transform: uppercase;
   border: 3px solid #131313;
   color: ${p => p.theme.colors.white};
   background-color: transparent;
+  @media screen and (min-width: 375px) {
+    font-size: 24px;
+    padding: 20px 40px;
+  }
 `;
 
 export const BtnIconDown = styled(GoTriangleDown)`

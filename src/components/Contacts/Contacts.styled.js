@@ -2,9 +2,22 @@ import styled from "styled-components";
 import { Form, Field } from "formik";
 
 export const ContactsContent = styled.div`
+
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  //justify-content: space-between;
+   /* @media screen and (min-width: 375px) {
+    font-size: 24px;
+    padding: 20px 40px;
+  } */
+`;
+
+export const ContactsMap = styled.iframe`
+  margin: 0 0 30px 0;
+  @media screen and (min-width: 375px) {
+    margin: 0;
+  }
 `;
 
 export const ContactsForm = styled(Form)`

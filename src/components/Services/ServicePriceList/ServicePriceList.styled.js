@@ -1,18 +1,25 @@
 import styled from "styled-components";
 
 export const PriceList = styled.ul`
-  padding: 0 70px;
+  padding: 0 35px;
   background-color: ${p => p.theme.colors.black};
+  @media screen and (min-width: 375px) {
+    padding: 0 70px;
+  }
 `;
 
 export const PriceListItem = styled.li`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
-  font-size: 24px;
+  padding: 10px 0;
+  font-size: 12px;
   &:not(:last-child) {
     border-bottom: 3px solid #202020;
+  }
+  @media screen and (min-width: 375px) {
+    font-size: 24px;
+    padding: 20px 0;
   }
 `;
 
