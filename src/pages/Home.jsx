@@ -1,6 +1,7 @@
 import { Hero } from "components/Hero/Hero";
 import { MainSection } from "components/common/MainSection/MainSection";
 import { About } from "components/About/About";
+import { GallerySlider } from "components/Gallery/Gallery";
 
 export const Home = () => {
   return (
@@ -10,7 +11,7 @@ export const Home = () => {
         <About />
       </MainSection>
       <MainSection descr="our works" title="PORTFOLIO">
-        <div>gallery</div>
+        <GallerySlider />
       </MainSection>
       <MainSection descr="what do we do" title="SERVICES">
         <div>prices</div>
