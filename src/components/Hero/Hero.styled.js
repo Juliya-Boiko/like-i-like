@@ -6,10 +6,13 @@ export const HeroContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 170px 0;
+  padding: 70px 0;
   background-image: url(${BgiImgSrc});
   background-size: cover;
   background-repeat: no-repeat;
+  @media screen and (min-width: 375px) {
+    padding: 170px 0;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -17,7 +20,10 @@ export const HeroTitle = styled.h1`
   max-width: 800px;
   margin: 50px 0 0 0;
   font-weight: ${p => p.theme.fontWeight.bold};
-  font-size: 48px;
+  font-size: 30px;
   line-height: 56px;
   text-align: center;
+  @media screen and (min-width: 375px) {
+     font-size: 48px;
+  }
 `;

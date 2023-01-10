@@ -10,7 +10,10 @@ export const GalleryLink = styled(NavLink)`
   justify-content: center;
   text-transform: uppercase;
   font-weight: ${p => p.theme.fontWeight.bold};
-  font-size: 24px;
+  font-size: 12px;
   color: ${p => p.theme.colors.white};
   background-color: #131313;
+  @media screen and (min-width: 375px) {
+    font-size: 24px;
+  }
 `;
