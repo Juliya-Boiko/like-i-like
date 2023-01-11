@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Project, ProjectOverlay, ProjectType, ProjectTitle } from "./ProjectItem.styled";
+import { Project, ProjectImg, ProjectOverlay, ProjectType, ProjectTitle } from "./ProjectItem.styled";
 import { Modal } from "components/common/Modal/Modal";
 
 export const ProgectItem = ({ item }) => {
@@ -16,7 +16,7 @@ export const ProgectItem = ({ item }) => {
   return (
     <>
       <Project key={item.id} onClick={openModal}>
-        <img src={item.original} alt={item.title} />
+        <ProjectImg src={item.original} alt={item.title} />
         <ProjectOverlay>
           <ProjectType>{item.type} <span>/ /</span></ProjectType>
           <ProjectTitle>{item.title}</ProjectTitle>

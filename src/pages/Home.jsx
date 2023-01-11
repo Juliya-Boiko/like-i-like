@@ -4,10 +4,12 @@ import { About } from "components/About/About";
 import { GallerySlider } from "components/Gallery/Gallery";
 import { Services } from "components/Services/Services";
 import { Contacts } from "components/Contacts/Contacts";
+import { Scroll } from "components/common/Scroll/Scroll";
 
 export const Home = () => {
   return (
     <>
+      <Scroll />
       <Hero />
       <MainSection descr="our story" title="ABOUT US">
         <About />

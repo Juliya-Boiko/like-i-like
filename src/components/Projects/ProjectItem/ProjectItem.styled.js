@@ -9,6 +9,14 @@ export const Project = styled.li`
   }
 `;
 
+export const ProjectImg = styled.img`
+  display: block;
+  width: 300px;
+  @media screen and (min-width: 900px) {
+    width: 350px;
+  }
+`;
+
 export const ProjectOverlay = styled.div`
   position: absolute;
   top: 0;

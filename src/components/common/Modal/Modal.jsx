@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ModalOverlay, ModalContent, ModalBtn, ModalBtnIcon, ModalImg } from "./Modal.styled";
+import { ModalOverlay, ModalContent, ModalBtn, ModalImg } from "./Modal.styled";
 
 export const Modal = ({ closeModal, item }) => {
 
@@ -27,7 +27,7 @@ export const Modal = ({ closeModal, item }) => {
     <ModalOverlay onClick={handleBackdropClick}>
       <ModalContent>
         <ModalBtn type="button" onClick={closeModal}>
-          <ModalBtnIcon size="40px"/>
+          close
         </ModalBtn>
         <ModalImg src={item.original} alt={item.title} />
       </ModalContent>
