@@ -4,7 +4,7 @@ export const FooterContainer = styled.footer`
   width: 100%;
   padding: 30px 0;
   background-color: ${p => p.theme.colors.black};
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     padding: 60px 0;
   }
 `;
@@ -14,7 +14,7 @@ export const FooterContent = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     flex-direction: row;
   }
 `;

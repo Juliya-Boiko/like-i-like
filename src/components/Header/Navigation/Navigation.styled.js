@@ -25,19 +25,19 @@ export const NavItemLink = styled(NavLink)`
 
 export const NavItemText = styled.span`
   display: none;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     display: block;
   }
 `;
 
 export const NavIconHome = styled(AiOutlineHome)`
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     display: none;
   }
 `;
 
 export const NavIconPortfolio = styled(AiFillAppstore)`
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     display: none;
   }
 `;

@@ -13,7 +13,7 @@ export const AddressItem = styled.li`
     color: ${p => p.theme.colors.accent};
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     font-size: 18px;
   }
 `;
@@ -24,7 +24,7 @@ export const AddressLink = styled.a`
 
 export const AddressList = styled.address`
   margin: 30px 0;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     margin: 0;
   }
 `;

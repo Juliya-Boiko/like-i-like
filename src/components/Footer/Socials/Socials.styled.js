@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SocialList = styled.ul`
   display: flex;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     flex-direction: column;
   }
 `;
@@ -20,7 +20,7 @@ export const SocialItem = styled.li`
     color: ${p => p.theme.colors.accent};
   }
 
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     &:not(:last-child) {
       margin: 0 0 18px 0;
     }

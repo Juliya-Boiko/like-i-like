@@ -4,7 +4,7 @@ import { MdLanguage } from "react-icons/md";
 
 export const LangList = styled.ul`
   display: none;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     display: flex;
   }
 `;
@@ -23,7 +23,7 @@ export const LangItem = styled.li`
 `;
 
 export const LangIcon = styled(MdLanguage)`
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     display: none;
   }
 `;

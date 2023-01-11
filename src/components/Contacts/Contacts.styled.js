@@ -15,12 +15,13 @@ export const ContactsContent = styled.div`
 
 export const ContactsMap = styled.iframe`
   margin: 0 0 30px 0;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     margin: 0;
   }
 `;
 
 export const ContactsForm = styled(Form)`
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,29 +29,42 @@ export const ContactsForm = styled(Form)`
 `;
 
 export const ContactsBtn = styled.button`
-  width: 320px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17px 0;
+  padding: 8px 0;
   font-weight: ${p => p.theme.fontWeight.bold};
-  font-size: 24px;
+  font-size: 14px;
   text-transform: uppercase;
   border: none;
   color: ${p => p.theme.colors.white};
   background-color: ${p => p.theme.colors.accent};
+  @media screen and (min-width: 425px) {
+    width: 320px;
+    padding: 17px 0;
+    font-size: 24px;
+  }
 `;
 
 export const ContactsInput = styled(Field)`
   box-sizing: border-box;
-  width: 320px;
-  margin: 0 0 30px 0;
-  padding: 17px;
+  display: block;
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 8px;
+  text-align: center;
   font-weight: ${p => p.theme.fontWeight.light};
-  font-size: 24px;
+  font-size: 14px;
   border: none;
   outline: none;
   background-color: ${p => p.theme.colors.xhite};
+  @media screen and (min-width: 425px) {
+    width: 320px;
+    margin: 0 0 30px 0;
+    padding: 17px;
+    font-size: 24px;
+  }
 `;
 
 export const ContactsError = styled.p`

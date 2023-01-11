@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const PriceList = styled.ul`
   padding: 0 35px;
   background-color: ${p => p.theme.colors.black};
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     padding: 0 70px;
   }
 `;
@@ -17,7 +17,7 @@ export const PriceListItem = styled.li`
   &:not(:last-child) {
     border-bottom: 3px solid #202020;
   }
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     font-size: 24px;
     padding: 20px 0;
   }

@@ -13,7 +13,7 @@ export const PriceBtn = styled.button`
   border: 3px solid #131313;
   color: ${p => p.theme.colors.white};
   background-color: transparent;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     font-size: 24px;
     padding: 20px 40px;
   }

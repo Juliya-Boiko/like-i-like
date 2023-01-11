@@ -13,7 +13,7 @@ export const GalleryLink = styled(NavLink)`
   font-size: 12px;
   color: ${p => p.theme.colors.white};
   background-color: #131313;
-  @media screen and (min-width: 375px) {
+  @media screen and (min-width: 425px) {
     font-size: 24px;
   }
 `;
