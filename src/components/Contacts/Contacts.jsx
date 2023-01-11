@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Formik, ErrorMessage } from "formik";
 import { ContactsContent, ContactsMap, ContactsForm, ContactsBtn, ContactsInput, ContactsError } from "./Contacts.styled";
-import { contactSchema } from "helpers/schemas";
+//import { contactSchema } from "helpers/schemas";
 import Notiflix from 'notiflix';
 require("yup-phone");
 
@@ -46,7 +46,7 @@ export const Contacts = () => {
     <Formik
         initialValues={{ name: '', number: '' }}
         onSubmit={submitHandler}
-        validationSchema={contactSchema}
+        // validationSchema={contactSchema}
       >
         {props => (
           <ContactsForm>

@@ -6,5 +6,5 @@ const nameRegExp = RegExp(
 
 export const contactSchema = yup.object().shape({
   name: yup.string().matches(nameRegExp).min(2).required(),
-  number: yup.string().phone().required(),
+ // number: yup.string().phone().required(),
 });

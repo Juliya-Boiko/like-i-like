@@ -1,5 +1,10 @@
+import { Projects } from "components/Projects/Projects";
+import { MainContainer } from "components/common/MainContainer/MainContainer";
+
 export const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <MainContainer>
+      <Projects />
+    </MainContainer>
   );
 };
