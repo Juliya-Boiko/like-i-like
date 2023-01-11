@@ -1,8 +1,10 @@
-import { LangList, LangItem, LangIcon } from "./UserLang.styled";
+import { LangList, LangItem, LangBtn, LangIcon } from "./UserLang.styled";
 
 export const UserLang = () => {
 
-  const langHandler = () => {};
+  const langHandler = () => {
+    console.log('change lang');
+  };
 
   return (
     <div>
@@ -10,7 +12,9 @@ export const UserLang = () => {
         <LangItem>EN /</LangItem>
         <LangItem>UA</LangItem>
       </LangList>
-      <LangIcon onClick={langHandler} size="20px"/>
+      <LangBtn type="button" onClick={langHandler}>
+        <LangIcon size="20px"/>
+      </LangBtn>
     </div>
   );
 };
