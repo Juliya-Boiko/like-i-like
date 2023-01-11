@@ -16,4 +16,8 @@ export const GalleryLink = styled(NavLink)`
   @media screen and (min-width: 425px) {
     font-size: 24px;
   }
+  &:hover {
+    color: ${p => p.theme.colors.accent};
+  }
+  transition: all 300ms ease-in-out;
 `;

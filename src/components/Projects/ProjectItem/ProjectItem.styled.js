@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Project = styled.li`
   position: relative;
+
   &:hover {
     div {
       opacity: 1;
@@ -29,7 +30,7 @@ export const ProjectOverlay = styled.div`
   justify-content: center;
   background-color: rgba(19, 19, 19, 0.9);
   opacity: 0;
-  transition: all 250ms ease-in-out;
+  transition: all 300ms ease-in-out;
 `;
 
 export const ProjectType = styled.p`

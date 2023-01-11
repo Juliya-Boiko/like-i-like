@@ -43,6 +43,11 @@ export const ContactsBtn = styled.button`
     padding: 17px 0;
     font-size: 24px;
   }
+  cursor: pointer;
+  &:hover {
+    color: ${p => p.theme.colors.black};
+  }
+  transition: all 300ms ease-in-out;
 `;
 
 export const ContactsInput = styled(Field)`
@@ -63,6 +68,7 @@ export const ContactsInput = styled(Field)`
     padding: 17px;
     font-size: 24px;
   }
+
 `;
 
 export const ContactsError = styled.p`

@@ -17,6 +17,7 @@ export const NavItemLink = styled(NavLink)`
   font-size: 24px;
   text-transform: uppercase;
   color: ${p => p.theme.colors.white};
+  transition: all 300ms ease-in-out;
 
   &:hover {
     color: ${p => p.theme.colors.accent};

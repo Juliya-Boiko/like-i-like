@@ -19,6 +19,7 @@ export const SocialItem = styled.li`
   &:hover {
     color: ${p => p.theme.colors.accent};
   }
+  transition: all 300ms ease-in-out;
 
   @media screen and (min-width: 425px) {
     &:not(:last-child) {

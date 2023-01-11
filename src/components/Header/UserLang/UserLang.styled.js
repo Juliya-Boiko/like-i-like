@@ -11,6 +11,7 @@ export const LangList = styled.ul`
 export const LangItem = styled.li`
   font-weight: ${p => p.theme.fontWeight.light};
   font-size: 24px;
+  transition: all 300ms ease-in-out;
 
   &:hover {
     color: ${p => p.theme.colors.accent};

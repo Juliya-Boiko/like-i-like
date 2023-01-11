@@ -12,6 +12,7 @@ export const AddressItem = styled.li`
   &:hover {
     color: ${p => p.theme.colors.accent};
   }
+  transition: all 300ms ease-in-out;
 
   @media screen and (min-width: 425px) {
     font-size: 18px;

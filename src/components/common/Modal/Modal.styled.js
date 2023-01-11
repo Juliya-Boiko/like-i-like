@@ -35,12 +35,12 @@ export const ModalBtn = styled.button`
   color: ${p => p.theme.colors.white};
   cursor: pointer;
   background-color: transparent;
-
+  transition: all 300ms ease-in-out;
   &:hover {
     color: ${p => p.theme.colors.accent};
   }
 
-   @media screen and (min-width: 900px) {
+  @media screen and (min-width: 900px) {
     top: -40px;
     right: -40px;
   }

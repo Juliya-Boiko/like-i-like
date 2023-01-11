@@ -17,6 +17,11 @@ export const PriceBtn = styled.button`
     font-size: 24px;
     padding: 20px 40px;
   }
+  cursor: pointer;
+  &:hover {
+    color: ${p => p.theme.colors.accent};
+  }
+  transition: all 300ms ease-in-out;
 `;
 
 export const BtnIconDown = styled(GoTriangleDown)`
