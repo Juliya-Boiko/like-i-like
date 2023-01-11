@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components';
 import { BrowserRouter } from "react-router-dom";
 import { App } from 'App';
 import { theme } from 'style/theme';
+import './i18n';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

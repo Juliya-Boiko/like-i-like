@@ -1,4 +1,4 @@
-import { LangList, LangItem, LangBtn, LangIcon } from "./UserLang.styled";
+import { LangBtn, LangIcon } from "./UserLang.styled";
 
 export const UserLang = () => {
 
@@ -7,14 +7,8 @@ export const UserLang = () => {
   };
 
   return (
-    <div>
-      <LangList>
-        <LangItem>EN /</LangItem>
-        <LangItem>UA</LangItem>
-      </LangList>
-      <LangBtn type="button" onClick={langHandler}>
-        <LangIcon size="20px"/>
-      </LangBtn>
-    </div>
+    <LangBtn type="button" onClick={langHandler}>
+      <LangIcon size="30px"/>
+    </LangBtn>
   );
 };

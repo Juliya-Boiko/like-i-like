@@ -1,6 +1,7 @@
 import { NavList, NavItem, NavItemLink, NavItemText, NavIconHome, NavIconPortfolio } from "./Navigation.styled";
 
 export const Navigation = () => {
+
   return (
     <NavList>
       <NavItem>
