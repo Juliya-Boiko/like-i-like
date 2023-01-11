@@ -1,8 +1,8 @@
-import { AddressItem, AddressLink } from "./Address.styled";
+import { AddressList, AddressItem, AddressLink } from "./Address.styled";
 
 export const Address = () => {
   return (
-    <address>
+    <AddressList>
       <ul>
         <AddressItem>
           <AddressLink href="tel:+380 67 243 87 63">+380 67 243 87 63</AddressLink>
@@ -14,6 +14,6 @@ export const Address = () => {
           Kyiv, Regeneratornaya st. 4
         </AddressItem>
       </ul>
-    </address>
+    </AddressList>
   );
 };

@@ -1,4 +1,3 @@
-//import { useRef } from 'react';
 import { Formik, ErrorMessage } from "formik";
 import * as yup from 'yup';
 import { ContactsContent, ContactsMap, ContactsForm, ContactsBtn, ContactsInput, ContactsError } from "./Contacts.styled";
@@ -21,17 +20,15 @@ Notiflix.Notify.init({
 
 export const Contacts = () => {
 
-  const windowWidth = () => {
-    const width = window;
-    console.log(width);
-  };
+  // const windowWidth = () => {
+  //   const width = window;
+  //   console.log(width);
+  // };
 
 
   const submitHandler = async (values) => {
-    //await new Promise((r) => setTimeout(r, 500));
-    //Notiflix.Notify.success(`Dear ${values.name}, we will contact you soon`);
-    //console.log(windowWidth());
-    windowWidth();
+    await new Promise((r) => setTimeout(r, 500));
+    Notiflix.Notify.success(`Dear ${values.name}, we will contact you soon`);
   };
 
   return (

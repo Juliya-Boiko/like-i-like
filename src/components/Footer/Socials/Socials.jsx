@@ -1,10 +1,10 @@
-import { SocialItem, SocialLink } from "./Socials.styled";
+import { SocialList, SocialItem, SocialLink } from "./Socials.styled";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 import { FaTelegramPlane } from "react-icons/fa";
 
 export const Socials = () => {
   return (
-    <ul>
+    <SocialList>
       <SocialItem>
         <SocialLink href="https://www.facebook.com/">
           <AiFillFacebook size="20px"/>
@@ -20,6 +20,6 @@ export const Socials = () => {
           <FaTelegramPlane size="20px"/>
         </SocialLink>
       </SocialItem>
-    </ul>
+    </SocialList>
   );
 };
