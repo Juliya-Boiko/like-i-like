@@ -4,6 +4,7 @@ import { MainSection } from "components/common/MainSection/MainSection";
 import { About } from "components/About/About";
 import { GallerySlider } from "components/Gallery/Gallery";
 import { Services } from "components/Services/Services";
+import { Team } from "components/Team/Team";
 import { Contacts } from "components/Contacts/Contacts";
 import { Scroll } from "components/common/Scroll/Scroll";
 
@@ -22,6 +23,9 @@ export const Home = () => {
       </MainSection>
       <MainSection descr={t('what_we_do')} title={t('services')}>
         <Services />
+      </MainSection>
+      <MainSection descr={t('team')} title={t('designers')}>
+        <Team />
       </MainSection>
       <MainSection descr={t('find_us')} title={t('contact_us')}>
         <Contacts />
