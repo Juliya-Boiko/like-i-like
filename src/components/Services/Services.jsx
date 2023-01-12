@@ -1,10 +1,12 @@
-import { useState,  } from "react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ServicePriceBtn } from "./ServicePriceBtn/ServicePriceBtn";
 import { ServicePriceList } from "./ServicePriceList/ServicePriceList";
 
 export const Services = () => {
   const [designShawn, setDesignShawn] = useState(true);
   const [renovationShawn, setRenovationShawn] = useState(false);
+  const { t } = useTranslation();  
 
   const designHandler = () => {
     setDesignShawn(prevState => !prevState);
@@ -16,9 +18,9 @@ export const Services = () => {
 
   return (
     <div>
-      <ServicePriceBtn title="design" state={designShawn} onClick={designHandler} />
+      <ServicePriceBtn title={t('design')} state={designShawn} onClick={designHandler} />
       {designShawn && <ServicePriceList />}
-      <ServicePriceBtn title="renovation" state={renovationShawn} onClick={renovationHandler} />
+      <ServicePriceBtn title={t('renovation')} state={renovationShawn} onClick={renovationHandler} />
       {renovationShawn && <ServicePriceList />}
     </div>
   );

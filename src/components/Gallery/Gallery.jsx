@@ -1,9 +1,11 @@
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from 'react-image-gallery';
+import { useTranslation } from "react-i18next";
 import { GalleryLink } from "./Gallery.styled";
 import { data } from "data/data";
 
 export const GallerySlider = () => {
+  const { t } = useTranslation();  
 
   return (
     <div>
@@ -14,7 +16,9 @@ export const GallerySlider = () => {
         showPlayButton={false}
         autoPlay={true}
       />
-      <GalleryLink to="portfolio">See all</GalleryLink>
+      <GalleryLink to="portfolio">
+        {t('see_all')}
+      </GalleryLink>
     </div>
   );
 };

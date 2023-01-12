@@ -2,6 +2,7 @@ import { TitleBlock, TitleText, TitleSymbol, TitleAccent, SectionContent } from 
 import { MainContainer } from "../MainContainer/MainContainer";
 
 export const MainSection = ({ descr, title, children }) => {
+  
   return (
     <section>
       <TitleBlock>

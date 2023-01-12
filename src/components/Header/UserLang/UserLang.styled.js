@@ -1,5 +1,15 @@
 import styled from "styled-components";
-import { MdLanguage } from "react-icons/md";
+
+export const LangList = styled.ul`
+  display: flex;
+  align-items: center;
+`;
+
+export const LangItem = styled.li`
+  &:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+`;
 
 export const LangBtn = styled.button`
   padding: 0;
@@ -7,10 +17,4 @@ export const LangBtn = styled.button`
   cursor: pointer;
   color: ${p => p.theme.colors.white};
   background-color: transparent;
-`;
-
-export const LangIcon = styled(MdLanguage)`
-  /* @media screen and (min-width: 425px) {
-    display: none;
-  } */
 `;

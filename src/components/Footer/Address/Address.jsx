@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { AddressList, AddressItem, AddressLink } from "./Address.styled";
 
 export const Address = () => {
+  const { t } = useTranslation();  
+
   return (
     <AddressList>
       <ul>
@@ -11,7 +14,7 @@ export const Address = () => {
           <AddressLink href="mailto:likeilike2012@gmail.com">likeilike2012@gmail.com</AddressLink>
         </AddressItem>
         <AddressItem>
-          Kyiv, Regeneratornaya st. 4
+          {t('address')}
         </AddressItem>
       </ul>
     </AddressList>

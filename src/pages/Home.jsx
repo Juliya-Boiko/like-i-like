@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Hero } from "components/Hero/Hero";
 import { MainSection } from "components/common/MainSection/MainSection";
 import { About } from "components/About/About";
@@ -7,20 +8,22 @@ import { Contacts } from "components/Contacts/Contacts";
 import { Scroll } from "components/common/Scroll/Scroll";
 
 export const Home = () => {
+  const { t } = useTranslation();  
+
   return (
     <>
       <Scroll />
       <Hero />
-      <MainSection descr="our story" title="ABOUT US">
+      <MainSection descr={t('our_story')} title={t('about_us')}>
         <About />
       </MainSection>
-      <MainSection descr="our works" title="PORTFOLIO">
+      <MainSection descr={t('our_works')} title={t('portfolio')}>
         <GallerySlider />
       </MainSection>
-      <MainSection descr="what do we do" title="SERVICES">
+      <MainSection descr={t('what_we_do')} title={t('services')}>
         <Services />
       </MainSection>
-      <MainSection descr="where to find us" title="CONTACT US">
+      <MainSection descr={t('find_us')} title={t('contact_us')}>
         <Contacts />
       </MainSection>
     </>

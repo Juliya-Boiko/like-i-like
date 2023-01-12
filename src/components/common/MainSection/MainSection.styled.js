@@ -9,6 +9,7 @@ export const TitleBlock = styled.div`
 `;
 
 export const TitleText = styled.span`
+  text-transform: lowercase;
   font-weight: ${p => p.theme.fontWeight.medium};
   font-size: 12px;
   line-height: 28px;
@@ -27,6 +28,7 @@ export const TitleSymbol = styled.span`
 `;
 
 export const TitleAccent = styled.span`
+  text-transform: uppercase;
   font-weight: ${p => p.theme.fontWeight.bold};
   font-size: 18px;
   @media screen and (min-width: 425px) {

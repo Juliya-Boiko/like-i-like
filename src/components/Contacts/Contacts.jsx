@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Formik, ErrorMessage } from "formik";
+import { useTranslation } from "react-i18next";
 import { ContactsContent, ContactsMap, ContactsForm, ContactsBtn, ContactsInput, ContactsError } from "./Contacts.styled";
 //import { contactSchema } from "helpers/schemas";
 import Notiflix from 'notiflix';
@@ -7,6 +8,7 @@ require("yup-phone");
 
 export const Contacts = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+  const { t } = useTranslation();  
 
   const detectSize = () => {
     setWindowSize(window.innerWidth);
@@ -53,7 +55,7 @@ export const Contacts = () => {
             <ContactsInput
               type="text"
               name="name"
-              placeholder="name"
+              placeholder={t('name')}
               onChange={props.handleChange}
               value={props.values.name} />
             <ErrorMessage name="name" render={msg => <ContactsError>{msg}</ContactsError>} />
@@ -64,7 +66,7 @@ export const Contacts = () => {
               placeholder="+38 050 111 11 11"
             />
             <ErrorMessage name="number" render={msg => <ContactsError>{msg}</ContactsError>} />
-            <ContactsBtn type="submit">Call me</ContactsBtn>
+            <ContactsBtn type="submit">{t('call_me')}</ContactsBtn>
           </ContactsForm>
         )}
       </Formik>

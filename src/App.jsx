@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { Loader } from "components/Loader/Loader";
 
 export const App = () => {
+
   return (
     <Suspense fallback={<Loader />}>
       <Routes>
