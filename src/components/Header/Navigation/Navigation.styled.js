@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { AiOutlineHome, AiFillAppstore } from "react-icons/ai";
+import { animated_text } from "components/common/animations";
 
 export const NavList = styled.ul`
   display: flex;
@@ -20,7 +21,7 @@ export const NavItemLink = styled(NavLink)`
   transition: all 300ms ease-in-out;
 
   &:hover {
-    color: ${p => p.theme.colors.accent};
+    animation: ${animated_text} 10s ease infinite;
   }
 `;
 

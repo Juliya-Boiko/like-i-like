@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { animated_text } from "components/common/animations";
 
 export const GalleryLink = styled(NavLink)`
   width: 320px;
@@ -17,7 +18,7 @@ export const GalleryLink = styled(NavLink)`
     font-size: 24px;
   }
   &:hover {
-    color: ${p => p.theme.colors.accent};
+    animation: ${animated_text} 10s ease infinite;
   }
   transition: all 300ms ease-in-out;
 `;

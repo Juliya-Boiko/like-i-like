@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated_text } from "components/common/animations";
 
 export const ModalOverlay = styled.div`
   position: fixed;
@@ -37,7 +38,7 @@ export const ModalBtn = styled.button`
   background-color: transparent;
   transition: all 300ms ease-in-out;
   &:hover {
-    color: ${p => p.theme.colors.accent};
+    animation: ${animated_text} 10s ease infinite;
   }
 
   @media screen and (min-width: 900px) {

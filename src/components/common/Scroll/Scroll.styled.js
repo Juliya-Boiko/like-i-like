@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { animated_text } from "components/common/animations";
 
 export const ScrollBlock = styled.div`
   position: relative;
   cursor: pointer;
   &:hover {
-    color: ${p => p.theme.colors.accent};
+    animation: ${animated_text} 10s ease infinite;
   }
   transition: all 300ms ease-in-out;
 `;

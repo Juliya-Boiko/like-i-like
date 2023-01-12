@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated_text } from "components/common/animations";
 
 export const SocialList = styled.ul`
   display: flex;
@@ -17,7 +18,7 @@ export const SocialItem = styled.li`
   }
 
   &:hover {
-    color: ${p => p.theme.colors.accent};
+     animation: ${animated_text} 10s ease infinite;
   }
   transition: all 300ms ease-in-out;
 

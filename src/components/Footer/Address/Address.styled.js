@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { animated_text } from "components/common/animations";
 
 export const AddressItem = styled.li`
   font-style: normal;
@@ -10,7 +11,7 @@ export const AddressItem = styled.li`
   }
 
   &:hover {
-    color: ${p => p.theme.colors.accent};
+    animation: ${animated_text} 10s ease infinite;
   }
   transition: all 300ms ease-in-out;
 
